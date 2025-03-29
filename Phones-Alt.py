@@ -153,7 +153,7 @@ y = np.array(brand_price)
     
 plt.figure(figsize=(10, 6))  # Sets the figure size
 plt.title("Prices per Brand", fontsize=16)  # Adds title with a larger font size
-plt.bar(x, y, width=0.6, color='skyblue', edgecolor='black')  # Customization
+plt.bar(x, y, width=0.6, color='green', edgecolor='black')  # Customization
 
 # Add annotations on top of each bar
 for i in range(len(x)):
