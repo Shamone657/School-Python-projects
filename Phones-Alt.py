@@ -1,8 +1,12 @@
+#Modules
+
 import csv
 
 import numpy as np
 
 import matplotlib.pyplot as plt
+
+#CSV file
 
 with open("phones.csv", mode="r", newline="") as file:
         
@@ -26,7 +30,7 @@ with open("phones.csv", mode="r", newline="") as file:
         
     for row in reader:
             
-        #print(row) #shows csv contents in shell
+        print(row) #shows csv contents in shell
         
         brands.append(row[0])
         
@@ -46,6 +50,8 @@ with open("phones.csv", mode="r", newline="") as file:
         
         price.append(prices)
         
+#Cleaning the lists
+        
 Brands = []
 for q in brands:
     if q not in Brands:
@@ -64,6 +70,8 @@ Storage = [y.replace("GB","") for y in storage] #Removes GB from storage list
 for o in range(len(Storage)): #Converts Storage to int 
     
     Storage[o] = int(Storage[o])
+    
+#Functions for analitics
 
 def minNum(l):
     print('Minimum number is' ,l[0],'.')
@@ -101,23 +109,62 @@ def mode(l):
     print("Value | Frequency")
     print("-----------------")
     for i in range(len(names)):
-        print(f"{names[i]:<6} | {co[i]}")
+        print(f"{names[i]:<6} | {co[i]}") #Creates table
 
-Brands = []
+Brands = [] #Creates list for each unique brand
 for q in brands:
     if q not in Brands:
         Brands.append(q)
 
 brand_price = []
 
-for brand in Brands:
+for brand in Brands: #Creates list for total value in each brand
     total = 0
     for m in range(len(brands)):
         if brands[m] == brand:
             total += price[m]
 
     brand_price.append(total)
-    #print(brand,"-", total)
+    print(brand,"-", total)
+    
+#Displaying analitics
+    
+print("The mode of brands are:")
     
 mode(brands)
 
+print("The mean price is:")
+
+mean(price)
+
+print("The mode of the storage is:")
+
+mode(Storage)
+
+print("The mode of RAM is:")
+
+mode(Ram)
+
+#Graphing
+    
+x = np.array(Brands)    
+    
+y = np.array(brand_price)
+    
+plt.figure(figsize=(10, 6))  # Sets the figure size
+plt.title("Prices per Brand", fontsize=16)  # Adds title with a larger font size
+plt.bar(x, y, width=0.6, color='skyblue', edgecolor='black')  # Customization
+
+# Add annotations on top of each bar
+for i in range(len(x)):
+    plt.text(i, y[i] + 50, f"{y[i]}", ha='center', fontsize=10)  # Adjusts position and font size
+
+plt.xticks(rotation=45, fontsize=12)  # Rotates labels and increases font size
+plt.yticks(fontsize=12)  # Increase font size for y-axis labels
+
+plt.xlabel("Brands", fontsize=14)  # Add x-axis label
+plt.ylabel("Total Price ($)", fontsize=14)  # Add y-axis label
+
+plt.tight_layout()  # Adjusts layout to prevent clipping
+
+plt.show()
