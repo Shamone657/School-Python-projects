@@ -1,0 +1,140 @@
+#logout {
+    background-color: #bd0f0f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'SansDMono', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-left: 0px;
+}
+
+#logout:hover {
+    background-color: #ff4d4d; /* Change to a lighter red for hover */
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#logout:active {
+    background-color: #a10000; /* Change to a darker red for active */
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures it stays on top of other elements */
+    background-color: #523e97; /* Dark background color */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    font-family: 'SansDMono', sans-serif;
+}
+
+.navbar a:hover {
+    color: #ff4d4d; /* Lighter red on hover */
+}
+h1{
+    text-align: center;
+    font-size:40px;
+    font-family: 'SansDMono', sans-serif;
+}
+
+.comment {
+    margin-bottom: 15px; /* Space between comments */
+    padding: 10px; /* Inner spacing */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f5ebeb; /* Light background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.comment p {
+    margin: 5px 0; /* Space between paragraphs */
+    font-family: 'SansDMono', sans-serif; /* Consistent font */
+    font-size: 14px; /* Font size for comment text */
+    color: #333; /* Dark gray text color */
+}
+
+.comment strong {
+    color: #000000; /* Highlighted color for usernames */
+    font-size: 20px; /* Slightly larger font for usernames */
+}
+
+.comment hr {
+    border: none;
+    margin: 10px 0; /* Space around the line */
+}
+
+.comment:hover {
+    background-color: #f0f0f0; /* Slightly darker background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.comment h4 {
+    font-size: 18px; /* Font size for comment titles */
+    color: #000000; /* Color for comment titles */
+    margin-bottom: 5px; /* Space below the title */
+}
+
+body{
+    background-color:rgb(124, 199, 149);
+}
+
+button{
+    background-color: #523e97; /* Dark background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding for button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for button text */
+    font-family: 'SansDMono', sans-serif; /* Consistent font */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+}
+
+button:hover{
+    background-color: #555; /* Darker background on hover */
+    color: white; /* White text on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+button:active{
+    background-color: #333; /* Darker background on active */
+    color: white; /* White text on active */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on active */
+}
+input[type="text"]{
+    width: 30%; /* Width of the input field */
+    height:30px; /* Height of the input field */
+    font-size: large; /* Font size for input text */
+    font-family: 'SansDMono', sans-serif; /* Consistent font */
+    font-weight: bold; /* Bold text */
+    margin: 8px 0; /* Margin around the input field */
+    border: 2px solid #000000; /* Black border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Box sizing model */
+}
+input[type="comment"]{
+    width: 30%; /* Width of the input field */
+    height:30px; /* Height of the input field */
+    font-size: large; /* Font size for input text */
+    font-family: 'SansDMono', sans-serif; /* Consistent font */
+    font-weight: bold; /* Bold text */
+    margin: 8px 0; /* Margin around the input field */
+    border: 2px solid #000000; /* Black border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Box sizing model */
+}

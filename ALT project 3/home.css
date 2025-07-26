@@ -1,0 +1,48 @@
+#logout {
+    background-color: #bd0f0f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'SansDMono', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-left: 0px;
+}
+
+#logout:hover {
+    background-color: #ff4d4d; /* Change to a lighter red for hover */
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#logout:active {
+    background-color: #a10000; /* Change to a darker red for active */
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures it stays on top of other elements */
+    background-color: #523e97; /* Dark background color */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    font-family: 'SansDMono', sans-serif;
+}
+
+.navbar a:hover {
+    color: #ff4d4d; /* Lighter red on hover */
+}

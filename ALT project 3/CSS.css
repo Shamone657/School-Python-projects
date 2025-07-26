@@ -1,0 +1,148 @@
+body{
+    background: rgb(9,14,170);
+    background: radial-gradient(circle, rgba(9,14,170,0.9612219887955182) 11%, rgba(0,0,133,1) 49%);
+}
+
+h2{
+    color: white;
+    text-align: center;
+    font-family: 'SansDMono', sans-serif;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h4{
+    color: white;
+    text-align: center;
+    font-family: 'SansDMono', sans-serif;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+p{
+    color: white;
+    text-align: center;
+    font-family: 'SansDMono', sans-serif;
+    font-size: 14px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+div{
+    background-color: rgba(62, 122, 50, 0.7);
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;  
+    justify-content: center; 
+}
+
+input[type="text"]{
+    width: 30%;
+    height:30px;
+    font-size: large;
+    font-family: 'SansDMono', sans-serif;
+    font-weight: bold;
+    margin: 8px 0;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="password"]{
+    width: 30%;
+    height:30px;
+    font-size: large;
+    font-family: 'SansDMono', sans-serif;
+    font-weight: bold;
+    margin: 8px 0;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="email"]{
+    width: 30%;
+    height:30px;
+    font-size: large;
+    font-family: 'SansDMono', sans-serif;
+    font-weight: bold;
+    margin: 8px 0;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button{
+    background-color: #a1a1a1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'SansDMono', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+button:hover{
+    background-color: #555;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+button:active{
+    background-color: #333;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#logout {
+    background-color: #bd0f0f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'SansDMono', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-left: 0px;
+}
+
+#logout:hover {
+    background-color: #ff4d4d; /* Change to a lighter red for hover */
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#logout:active {
+    background-color: #a10000; /* Change to a darker red for active */
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures it stays on top of other elements */
+    background-color: #523e97; /* Dark background color */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    font-family: 'SansDMono', sans-serif;
+}
+
+.navbar a:hover {
+    color: #ff4d4d; /* Lighter red on hover */
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="comments.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <script src="comments.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    
+    <script>
+    const firebaseConfig = {
+        apiKey: "AIzaSyA1S3bqogWziKxZpUYuKyNzkOttvvPL0n0",
+        authDomain: "cs2025-f556f.firebaseapp.com",
+        databaseURL: "https://cs2025-f556f-default-rtdb.europe-west1.firebasedatabase.app",
+        projectId: "cs2025-f556f",
+        storageBucket: "cs2025-f556f.firebasestorage.app",
+        messagingSenderId: "1026415742377",
+        appId: "1:1026415742377:web:2ab7bbb4d5a52bdff7c8b8"
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="Log.png" style="height:50px; width:50px;">
+        <a href="home.html">Home</a>
+        <a href="loginPage.html">Sign up/Log in</a>
+        <a href="comments.html">Comments</a>
+        <button onclick="logout()" id="logout">Log Out</button>
+    </nav>
+
+    <div class="container">
+        <h1>Forum</h1>
+        <form id="comment-form">
+            <input type="text" id="name" placeholder="Your name" required readonly>
+            <br>
+            <br>
+            <input type="text" id="title" placeholder="Title of show" required>
+            <br>
+            <br>
+            <textarea id="comment" placeholder="Your comment" required></textarea>
+            <br>
+            <br>
+            <button type="button" onclick="post()">Submit</button>
+            <br>
+        </form>
+        <br>
+        <div id="comments-list">
+            <div class="comment">
+                <p><strong>Username1</strong>:</p>
+                <p>This is a comment.</p>
+            </div>
+            <div class="comment">
+                <p><strong>Username2</strong>:</p>
+                <p>This is another comment.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
